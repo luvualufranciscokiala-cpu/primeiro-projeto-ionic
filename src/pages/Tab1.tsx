@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
 
@@ -16,7 +16,14 @@ const Tab1: React.FC = () => {
             <IonTitle size="large">Tab 1</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Tab 1 page" />
+        <ExploreContainer name="Tab 1 page" /> <IonCard>
+          <IonCardHeader>
+            <IonCardTitle>Título do cartão</IonCardTitle>
+            <IonCardSubtitle>subtítulo do cartão</IonCardSubtitle>
+          </IonCardHeader>
+
+          <IonCardContent>detalhes do pgamento</IonCardContent>
+        </IonCard>
       </IonContent>
     </IonPage>
   );
